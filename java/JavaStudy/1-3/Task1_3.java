@@ -25,11 +25,11 @@ public class Task1_3 {
 
         // ④ 20 を 6 で割った余りを代入する、変数 remi を作成しなさい。
         int remi = 0;
-        remi = 20 / 6;
+        remi = 20 % 6;
         // ⑤下記の処理について、何をしているのかコメントを記入してください
         // 有楽町 という値を変数 town に代入、 線 という値を変数 line に代入
         String town = "有楽町";
-        String line = "線";
+        String line = "sen";
 
         // ⑥ ⑤で作成した変数を連結させた値を代入する変数 train を作成しなさい。
         String train = town + line;

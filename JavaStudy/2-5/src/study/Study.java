@@ -21,7 +21,7 @@ public class Study {
 
     public static void main(String args[]) {
 
-        // ① 定数を全て使って、String型のListを記述してください。
+        // ① 定数を全て使って、String型のListを記述てください。
     	ArrayList<String> shohinList = new ArrayList<String>();
     	shohinList.add(SHOP_SHOHIN_00);
     	shohinList.add(SHOP_SHOHIN_01);

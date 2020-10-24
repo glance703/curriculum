@@ -1,26 +1,29 @@
 package check;
 
+import constants.Constants;
+
 public class Check {
 	public static void main(String[] args) {
 		//【Check.java】にてフィールド変数firstNameとlastNameを宣言し、
 		//firstName →　自分の名字　lastName →　自分の名前で初期化しなさい。
 		//なお、変数のアクセス修飾子は「private」とする。
-		private String firstName = "猿田";
-		private String lastName = "涼";
+		String firstName = "猿田";
+		String lastName = "涼";
 
-		//【Check.java】にてfirstNameとlastNameを引数で受け取って、
-		//連結して表示させるメソッド「printName」を作成しなさい。
-		//作成した関数のアクセス修飾子は「private」とする。
-		private void printName(String firstName, String lastName) {
-			System.out.println(firstName + lastName);
-		}
+		System.out.println(printName(firstName, lastName));
+
 
 		//【Check.java】にてPetクラスとRobotPetクラスをインスタンス化して、
 		//下記の完成イメージを出力させなさい。
-		Pet name = new Pet();
-		RobotPet output = new RobotPet();
-
-		name.Pet(new RobotPet(CHECK_CLASS_JAVA),  new RobotPet(CHECK_CLASS_HOGE));
-		RobotPet output = new RobotPet(CHECK_CLASS_JAVA),  new RobotPet(CHECK_CLASS_HOGE));
+		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
+		RobotPet robotPet = new RobotPet(Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
+		pet.introduce();
+		robotPet.introduce();
+	}
+		//【Check.java】にてfirstNameとlastNameを引数で受け取って、
+		//連結して表示させるメソッド「printName」を作成しなさい。
+		//作成した関数のアクセス修飾子は「private」とする。
+	public static String printName(String first, String last){
+		return first + last;
 	}
 }
